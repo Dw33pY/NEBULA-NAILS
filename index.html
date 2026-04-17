@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <!-- Primary Meta Tags -->
-  <title>NEBULA NAILS · avant-garde studio</title>
-  <meta name="title" content="NEBULA NAILS · avant-garde studio">
+  <title>NEBULA NAILS · cosmic artistry</title>
+  <meta name="title" content="NEBULA NAILS · cosmic artistry">
   <meta name="description" content="Where nail artistry meets cosmic elegance. Bespoke designs, next-level care. Book your constellation.">
   <meta name="keywords" content="nail salon, luxury nails, nail art, gel extensions, pedicure, manicure, dw33py, award-winning">
   <meta name="author" content="Dw33pY">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nebula-nails.dw33py.netlify.app">
-  <meta property="og:title" content="NEBULA NAILS · avant-garde studio">
+  <meta property="og:title" content="NEBULA NAILS · cosmic artistry">
   <meta property="og:description" content="Where nail artistry meets cosmic elegance. Bespoke designs, next-level care.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1000&auto=format&fit=crop">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://nebula-nails.dw33py.netlify.app">
-  <meta property="twitter:title" content="NEBULA NAILS · avant-garde studio">
+  <meta property="twitter:title" content="NEBULA NAILS · cosmic artistry">
   <meta property="twitter:description" content="Where nail artistry meets cosmic elegance.">
   <meta property="twitter:image" content="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1000&auto=format&fit=crop">
 
@@ -30,31 +30,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="no-scroll">
 
-  <!-- 🌟 CUSTOM PRELOADER -->
+  <!-- 🌌 COSMIC PRELOADER -->
   <div class="preloader" id="preloader">
     <div class="preloader__cosmic">
+      <div class="preloader__constellation">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+      </div>
       <div class="preloader__orbit">
         <div class="preloader__planet"></div>
         <div class="preloader__moon"></div>
+        <div class="preloader__ring"></div>
       </div>
       <div class="preloader__text">
         <span>N</span><span>E</span><span>B</span><span>U</span><span>L</span><span>A</span>
       </div>
       <p class="preloader__counter">0%</p>
+      <div class="preloader__line"></div>
     </div>
   </div>
 
-  <!-- 🌙 STICKY NAVBAR (glass + asymmetric) -->
+  <!-- 🌙 ETHEREAL NAVBAR -->
   <nav class="nav" id="navbar">
     <div class="nav__container">
-      <a href="#" class="nav__logo" data-glitch="NEBULA">NEBULA</a>
+      <a href="#" class="nav__logo" data-glitch="NEBULA">
+        <span class="logo__text">NEBULA</span>
+        <span class="logo__sparkle">✦</span>
+      </a>
       
-      <!-- unique mobile toggle (not basic hamburger) -->
       <div class="nav__mobile-toggle" id="navToggle">
         <span class="nav__toggle-bar"></span>
         <span class="nav__toggle-bar"></span>
@@ -62,240 +72,375 @@
       </div>
 
       <ul class="nav__menu" id="navMenu">
-        <li><a href="#home" class="nav__link active-link">Home</a></li>
-        <li><a href="#services" class="nav__link">Services</a></li>
-        <li><a href="#gallery" class="nav__link">Galaxy</a></li>
-        <li><a href="#stats" class="nav__link">Impact</a></li>
-        <li><a href="#testimonials" class="nav__link">Echoes</a></li>
-        <li><a href="#book" class="nav__link">Book</a></li>
+        <li><a href="#home" class="nav__link active-link"><span>Home</span><i class="fas fa-circle nav__dot"></i></a></li>
+        <li><a href="#services" class="nav__link"><span>Services</span><i class="fas fa-circle nav__dot"></i></a></li>
+        <li><a href="#gallery" class="nav__link"><span>Galaxy</span><i class="fas fa-circle nav__dot"></i></a></li>
+        <li><a href="#stats" class="nav__link"><span>Impact</span><i class="fas fa-circle nav__dot"></i></a></li>
+        <li><a href="#testimonials" class="nav__link"><span>Echoes</span><i class="fas fa-circle nav__dot"></i></a></li>
+        <li><a href="#book" class="nav__link"><span>Book</span><i class="fas fa-circle nav__dot"></i></a></li>
       </ul>
     </div>
+    <div class="nav__glow"></div>
   </nav>
 
-  <!-- Mobile menu close button (appears when menu is open) -->
-  <div class="mobile-menu-close" id="mobileMenuClose">
-    <i class="fas fa-times"></i>
-  </div>
+  <!-- Mobile menu backdrop -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
 
   <main>
-    <!-- 🚀 HERO SECTION – overlapping, parallax, asymmetric -->
+    <!-- 🚀 HERO – DIMENSIONAL PARALLAX -->
     <section class="hero" id="home">
       <div class="hero__bg-layer"></div>
+      <div class="hero__particles" id="particles"></div>
       <div class="hero__grid">
         <div class="hero__content">
           <div class="hero__badge">
-            <span class="badge__dot"></span> limited · cosmic collection
+            <span class="badge__dot pulse"></span> 
+            <span class="badge__text">limited · cosmic collection</span>
+            <i class="fas fa-sparkle badge__icon"></i>
           </div>
           <h1 class="hero__title">
             <span class="title-line">where nails</span>
             <span class="title-line accent">become galaxies</span>
           </h1>
-          <p class="hero__desc">Not just polish — it's dimension, texture, and starlight. <br>Experience hand-crafted cosmic designs in a sanctuary of elegance.</p>
+          <p class="hero__desc">Not just polish — it's dimension, texture, and starlight. Experience hand-crafted cosmic designs in a sanctuary of elegance.</p>
           <div class="hero__actions">
-            <button class="btn btn--primary btn--glow" onclick="document.querySelector('#book').scrollIntoView({behavior: 'smooth'})">explore orbit <i class="fas fa-arrow-right"></i></button>
-            <button class="btn btn--ghost">watch reel <i class="fas fa-play"></i></button>
+            <button class="btn btn--primary btn--glow magnetic" data-magnetic>
+              <span>explore orbit</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="btn btn--ghost magnetic" data-magnetic>
+              <span>watch reel</span>
+              <i class="fas fa-play"></i>
+            </button>
           </div>
           
-          <!-- floating trust elements -->
           <div class="hero__trust">
-            <div class="trust-item">
-              <i class="fas fa-medal"></i>
-              <span>Awwwards <br>Nominated '26</span>
+            <div class="trust-item floating-card">
+              <div class="trust-icon"><i class="fas fa-medal"></i></div>
+              <div class="trust-content">
+                <span class="trust-main">Awwwards</span>
+                <span class="trust-sub">Nominated '26</span>
+              </div>
             </div>
-            <div class="trust-item">
-              <i class="fas fa-star"></i>
-              <span>4.98 ★ <br>1.2k+ reviews</span>
+            <div class="trust-item floating-card">
+              <div class="trust-icon"><i class="fas fa-star"></i></div>
+              <div class="trust-content">
+                <span class="trust-main">4.98 ★</span>
+                <span class="trust-sub">1.2k+ reviews</span>
+              </div>
             </div>
           </div>
         </div>
         <div class="hero__visual">
-          <div class="hero__card hero__card--1">
+          <div class="hero__card hero__card--1 tilt-card" data-tilt>
             <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=800&auto=format&fit=crop" alt="chrome nails art" loading="eager">
-            <div class="card-tag">chrome nebula</div>
+            <div class="card-tag">
+              <i class="fas fa-circle"></i>
+              <span>chrome nebula</span>
+            </div>
+            <div class="card-shine"></div>
           </div>
-          <div class="hero__card hero__card--2">
+          <div class="hero__card hero__card--2 tilt-card" data-tilt>
             <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=800&auto=format&fit=crop" alt="nail design detail">
+            <div class="card-shine"></div>
           </div>
           <div class="hero__floating-quote">
-            “art you wear”
+            <span class="quote-line"></span>
+            <span class="quote-text">art you wear</span>
+            <span class="quote-line"></span>
           </div>
         </div>
       </div>
-      <!-- subtle scroll indicator -->
       <div class="hero__scroll-signal">
-        <span class="scroll-line"></span>
         <span class="scroll-text">constellation scroll</span>
+        <div class="scroll-indicator">
+          <span class="scroll-dot"></span>
+        </div>
       </div>
     </section>
 
-    <!-- ✦ SERVICES – split + overlapping cards, non generic -->
+    <!-- ✦ SERVICES – ASYMMETRIC OVERLAPPING CARDS -->
     <section class="services" id="services">
-      <div class="section-header section-header--asym">
-        <h2 class="section-title">signature <br>services</h2>
-        <p class="section-sub">curated experiences, not just appointments</p>
+      <div class="section-header">
+        <div class="header-left">
+          <span class="section-eyebrow">✦ our craft</span>
+          <h2 class="section-title">signature<br>services</h2>
+        </div>
+        <div class="header-right">
+          <p class="section-sub">curated experiences, not just appointments</p>
+          <div class="header-decoration">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
       </div>
       
       <div class="services__grid">
-        <div class="service-card service-card--featured">
+        <div class="service-card service-card--featured reveal-card">
           <div class="service-card__inner">
-            <div class="service-icon"><i class="fas fa-meteor"></i></div>
+            <div class="service-icon">
+              <i class="fas fa-meteor"></i>
+              <span class="icon-glow"></span>
+            </div>
             <h3>stellar extensions</h3>
-            <p>Gel-X & sculpted forms with holographic finishes.</p>
+            <p>Gel-X & sculpted forms with holographic finishes that catch every light.</p>
             <div class="service-hover-reveal">
-              <span>from $85</span>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <span class="price">from $85</span>
+              <span class="arrow"><i class="fas fa-long-arrow-alt-right"></i></span>
             </div>
+            <div class="card-bg-pattern"></div>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal-card">
           <div class="service-card__inner">
-            <div class="service-icon"><i class="fas fa-moon"></i></div>
+            <div class="service-icon">
+              <i class="fas fa-moon"></i>
+              <span class="icon-glow"></span>
+            </div>
             <h3>lunar manicure</h3>
-            <p>Japanese gel · structured overlay · endless shine.</p>
+            <p>Japanese gel · structured overlay · endless glass-like shine.</p>
             <div class="service-hover-reveal">
-              <span>from $55</span>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <span class="price">from $55</span>
+              <span class="arrow"><i class="fas fa-long-arrow-alt-right"></i></span>
             </div>
+            <div class="card-bg-pattern"></div>
           </div>
         </div>
-        <div class="service-card service-card--large">
+        <div class="service-card service-card--large reveal-card">
           <div class="service-card__inner">
-            <div class="service-icon"><i class="fas fa-spa"></i></div>
+            <div class="service-icon">
+              <i class="fas fa-spa"></i>
+              <span class="icon-glow"></span>
+            </div>
             <h3>cosmic pedi</h3>
-            <p>zero-gravity chairs · aromatherapy · flawless finish.</p>
+            <p>Zero-gravity chairs · aromatherapy · flawless finish that lasts.</p>
             <div class="service-hover-reveal">
-              <span>from $70</span>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <span class="price">from $70</span>
+              <span class="arrow"><i class="fas fa-long-arrow-alt-right"></i></span>
             </div>
+            <div class="card-bg-pattern"></div>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal-card">
           <div class="service-card__inner">
-            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
-            <h3>nail art lab</h3>
-            <p>custom 3D, chrome, cat-eye, hand-painted galaxies.</p>
-            <div class="service-hover-reveal">
-              <span>starting $30+</span>
-              <i class="fas fa-long-arrow-alt-right"></i>
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+              <span class="icon-glow"></span>
             </div>
+            <h3>nail art lab</h3>
+            <p>Custom 3D, chrome, cat-eye, hand-painted galaxies & constellations.</p>
+            <div class="service-hover-reveal">
+              <span class="price">starting $30+</span>
+              <span class="arrow"><i class="fas fa-long-arrow-alt-right"></i></span>
+            </div>
+            <div class="card-bg-pattern"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 🌀 GALLERY / HORIZONTAL SCROLL + OVERLAP -->
+    <!-- 🌀 GALLERY – HORIZONTAL CINEMATIC SCROLL -->
     <section class="gallery" id="gallery">
       <div class="gallery__header">
-        <h2>visual <span>nebula</span></h2>
+        <div class="header-content">
+          <span class="section-eyebrow">✦ visual journey</span>
+          <h2>the <span>nebula</span> collection</h2>
+        </div>
         <div class="gallery__controls">
-          <span>← drag →</span>
+          <span class="drag-hint">
+            <i class="fas fa-arrow-left"></i>
+            <span>drag to explore</span>
+            <i class="fas fa-arrow-right"></i>
+          </span>
         </div>
       </div>
       <div class="gallery__horizontal" id="horizontalScroll">
         <div class="gallery__track">
-          <div class="gallery__item"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=800&auto=format&fit=crop" alt="nails"><div class="item-label">aurora set</div></div>
-          <div class="gallery__item"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&auto=format&fit=crop" alt="nails"><div class="item-label">crystal quartz</div></div>
-          <div class="gallery__item"><img src="https://images.unsplash.com/photo-1587613990171-2a3f4a4b0d8c?q=80&w=800&auto=format&fit=crop" alt="nails"><div class="item-label">chrome void</div></div>
-          <div class="gallery__item"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=800&auto=format&fit=crop" alt="nails"><div class="item-label">opal halo</div></div>
-          <div class="gallery__item"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop" alt="nails"><div class="item-label">moon dust</div></div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=800&auto=format&fit=crop" alt="nails">
+            <div class="item-overlay"></div>
+            <div class="item-label">aurora set</div>
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&auto=format&fit=crop" alt="nails">
+            <div class="item-overlay"></div>
+            <div class="item-label">crystal quartz</div>
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1587613990171-2a3f4a4b0d8c?q=80&w=800&auto=format&fit=crop" alt="nails">
+            <div class="item-overlay"></div>
+            <div class="item-label">chrome void</div>
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=800&auto=format&fit=crop" alt="nails">
+            <div class="item-overlay"></div>
+            <div class="item-label">opal halo</div>
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop" alt="nails">
+            <div class="item-overlay"></div>
+            <div class="item-label">moon dust</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 📊 STATS – animated counters, glass morph -->
+    <!-- 📊 STATS – ANIMATED COSMIC COUNTERS -->
     <section class="stats" id="stats">
       <div class="stats__bg-blur"></div>
+      <div class="stats__constellation"></div>
       <div class="stats__grid">
         <div class="stat-item">
-          <div class="stat-number"><span class="counter" data-target="5400">0</span>+</div>
+          <div class="stat-number">
+            <span class="counter" data-target="5400">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
           <div class="stat-label">nails crafted</div>
+          <div class="stat-icon"><i class="fas fa-hand-sparkles"></i></div>
           <div class="stat-glow"></div>
         </div>
         <div class="stat-item">
-          <div class="stat-number"><span class="counter" data-target="12">0</span></div>
+          <div class="stat-number">
+            <span class="counter" data-target="12">0</span>
+          </div>
           <div class="stat-label">art awards</div>
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
           <div class="stat-glow"></div>
         </div>
         <div class="stat-item">
-          <div class="stat-number"><span class="counter" data-target="98">0</span>%</div>
+          <div class="stat-number">
+            <span class="counter" data-target="98">0</span>
+            <span class="stat-suffix">%</span>
+          </div>
           <div class="stat-label">client return</div>
+          <div class="stat-icon"><i class="fas fa-heart"></i></div>
           <div class="stat-glow"></div>
         </div>
         <div class="stat-item">
-          <div class="stat-number"><span class="counter" data-target="32">0</span></div>
+          <div class="stat-number">
+            <span class="counter" data-target="32">0</span>
+          </div>
           <div class="stat-label">exclusive shades</div>
+          <div class="stat-icon"><i class="fas fa-palette"></i></div>
           <div class="stat-glow"></div>
         </div>
       </div>
     </section>
 
-    <!-- 💬 TESTIMONIALS – overlapping cards & asymmetry -->
+    <!-- 💬 TESTIMONIALS – COSMIC ECHOES -->
     <section class="testimonials" id="testimonials">
       <div class="testimonials__layout">
         <div class="testimonials__quote-block">
-          <div class="quote-marks"><i class="fas fa-quote-right"></i></div>
+          <div class="quote-marks">
+            <i class="fas fa-quote-right"></i>
+            <span class="quote-stars">✦ ✦ ✦</span>
+          </div>
           <p class="testimonials__big-quote">"I've never felt more seen — every detail is art. NEBULA nails redefined my expectations."</p>
           <div class="client-signature">
-            <span class="client-name">— ARI K.</span>
-            <span class="client-title">creative director</span>
+            <div class="client-avatar">AK</div>
+            <div class="client-info">
+              <span class="client-name">ARI K.</span>
+              <span class="client-title">creative director</span>
+            </div>
           </div>
         </div>
         <div class="testimonials__cards">
-          <div class="testimonial-card floating">
+          <div class="testimonial-card floating-card">
             <div class="card-stars">★★★★★</div>
             <p>"The atmosphere is otherworldly. my nails lasted 5 weeks."</p>
-            <div class="card-author">— JULIA M.</div>
+            <div class="card-author">
+              <span class="author-avatar">JM</span>
+              <span>— JULIA M.</span>
+            </div>
           </div>
-          <div class="testimonial-card floating-delay">
+          <div class="testimonial-card floating-card delay-1">
             <div class="card-stars">★★★★★</div>
             <p>"Best nail art in the city. The holographic finish is insane."</p>
-            <div class="card-author">— TASHA W.</div>
+            <div class="card-author">
+              <span class="author-avatar">TW</span>
+              <span>— TASHA W.</span>
+            </div>
           </div>
-          <div class="testimonial-card testimonial-card--featured">
+          <div class="testimonial-card testimonial-card--featured floating-card delay-2">
             <div class="card-stars">★★★★★</div>
             <p>"Dw33pY-level design + flawless execution. I'm obsessed."</p>
-            <div class="card-author">— LENA R.</div>
+            <div class="card-author">
+              <span class="author-avatar">LR</span>
+              <span>— LENA R.</span>
+            </div>
+            <div class="featured-badge">verified ✦</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 📅 BOOKING + FORM (non generic) -->
+    <!-- 📅 BOOKING – INTERSTELLAR TRANSMISSION -->
     <section class="booking" id="book">
       <div class="booking__grid">
         <div class="booking__visual">
           <div class="booking__image-wrapper">
             <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" alt="booking">
-            <div class="booking__overlay-text">reserve your orbit</div>
+            <div class="booking__overlay"></div>
+            <div class="booking__overlay-text">
+              <span class="overlay-icon">✧</span>
+              <span>reserve your orbit</span>
+              <span class="overlay-icon">✧</span>
+            </div>
+          </div>
+          <div class="booking__info">
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <span>Tue–Sun · 10am–8pm</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-pin"></i>
+              <span>Orion Belt, Suite 7</span>
+            </div>
           </div>
         </div>
         <div class="booking__form-container glass-panel">
-          <h3>request a signal</h3>
+          <div class="form-header">
+            <h3>transmit a signal</h3>
+            <p>we'll respond within one cosmic cycle</p>
+          </div>
           <form id="bookingForm" class="booking-form">
-            <div class="form-group">
+            <div class="form-group floating-label">
               <input type="text" id="name" placeholder=" " required>
-              <label for="name">your name</label>
+              <label for="name">your celestial name</label>
+              <span class="form-icon"><i class="fas fa-user"></i></span>
             </div>
-            <div class="form-group">
+            <div class="form-group floating-label">
               <input type="tel" id="phone" placeholder=" " required>
-              <label for="phone">whatsapp number</label>
+              <label for="phone">whatsapp frequency</label>
+              <span class="form-icon"><i class="fab fa-whatsapp"></i></span>
             </div>
             <div class="form-group form-group--select">
+              <label class="select-label">select your constellation</label>
               <div class="custom-select" id="customSelect">
                 <div class="custom-select__trigger" id="selectTrigger">
-                  <span>select service</span>
+                  <span>choose a service</span>
                   <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="custom-select__options" id="selectOptions">
-                  <span class="custom-select__option" data-value="stellar extensions">stellar extensions</span>
-                  <span class="custom-select__option" data-value="lunar manicure">lunar manicure</span>
-                  <span class="custom-select__option" data-value="cosmic pedi">cosmic pedi</span>
-                  <span class="custom-select__option" data-value="nail art lab">nail art lab</span>
+                  <span class="custom-select__option" data-value="stellar extensions">
+                    <i class="fas fa-meteor"></i>stellar extensions
+                  </span>
+                  <span class="custom-select__option" data-value="lunar manicure">
+                    <i class="fas fa-moon"></i>lunar manicure
+                  </span>
+                  <span class="custom-select__option" data-value="cosmic pedi">
+                    <i class="fas fa-spa"></i>cosmic pedi
+                  </span>
+                  <span class="custom-select__option" data-value="nail art lab">
+                    <i class="fas fa-paint-brush"></i>nail art lab
+                  </span>
                 </div>
               </div>
               <input type="hidden" id="service" name="service" required>
             </div>
-            <button type="submit" class="btn btn--primary btn--full">transmit to whatsapp <i class="fab fa-whatsapp"></i></button>
+            <button type="submit" class="btn btn--primary btn--full btn--glow">
+              <span>transmit to whatsapp</span>
+              <i class="fab fa-whatsapp"></i>
+            </button>
             <p class="form-feedback" id="formFeedback"></p>
           </form>
         </div>
@@ -303,51 +448,68 @@
     </section>
   </main>
 
-  <!-- 🦶 FOOTER -->
+  <!-- 🦶 COSMIC FOOTER -->
   <footer class="footer">
+    <div class="footer__constellation"></div>
     <div class="footer__container">
       <div class="footer__brand">
-        <a href="#" class="footer__logo">NEBULA</a>
-        <p class="footer__tagline">cosmic nail artistry</p>
+        <a href="#" class="footer__logo">
+          NEBULA
+          <span class="logo-sparkle">✧</span>
+        </a>
+        <p class="footer__tagline">cosmic nail artistry · est. 2026</p>
+        <div class="footer__social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
       </div>
       <div class="footer__links">
         <div class="footer__link-group">
-          <h4>navigate</h4>
-          <a href="#home">home</a>
-          <a href="#services">services</a>
-          <a href="#gallery">gallery</a>
+          <h4><i class="fas fa-compass"></i> navigate</h4>
+          <a href="#home">home constellation</a>
+          <a href="#services">signature services</a>
+          <a href="#gallery">visual nebula</a>
+          <a href="#book">transmit signal</a>
         </div>
         <div class="footer__link-group">
-          <h4>connect</h4>
-          <a href="#">instagram</a>
-          <a href="#">tiktok</a>
-          <a href="#">pinterest</a>
+          <h4><i class="fas fa-sparkles"></i> studio</h4>
+          <a href="#">our cosmos</a>
+          <a href="#">stellar journal</a>
+          <a href="#">careers</a>
+          <a href="#">press</a>
         </div>
         <div class="footer__link-group">
-          <h4>studio</h4>
-          <a href="#">about</a>
-          <a href="#">journal</a>
-          <a href="#">contact</a>
+          <h4><i class="fas fa-envelope"></i> connect</h4>
+          <a href="#">hello@nebulanails.space</a>
+          <a href="#">+1 (555) 123-4567</a>
+          <a href="#">Orion Belt, Suite 7</a>
+          <a href="#">@nebulanails</a>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© 2026 NEBULA NAILS · all rights reserved</p>
+      <p>© 2026 NEBULA NAILS · all frequencies reserved</p>
       <p class="footer__credit">
-        <span>Crafted with precision by </span>
+        <span class="credit-icon">⚡</span>
+        <span>Crafted with cosmic precision by </span>
         <a href="https://dw33py.netlify.app" target="_blank" rel="noopener">Dw33pY</a>
-        <i class="fas fa-bolt"></i>
+        <span class="credit-icon">⚡</span>
       </p>
     </div>
   </footer>
 
-  <!-- whatsapp floating button & back-to-top -->
-  <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+  <!-- Floating elements -->
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+    <span class="top-glow"></span>
+  </a>
   <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener" id="whatsappFloat">
     <i class="fab fa-whatsapp"></i>
+    <span class="pulse-ring"></span>
   </a>
 
-  <!-- GSAP + Framer Motion (via CDN) + custom -->
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
